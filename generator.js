@@ -1,18 +1,25 @@
+var i = 0;
+
+$(".btn").on("click", function() {
+  i++;
+  console.log(fibonacciGenerator(i));
+});
+
 function fibonacciGenerator (n) {
 
   if (n === 1) {
     return [0];
-  } 
+  }
 
-  else if (n === 2) {  
+  else if (n === 2) {
     return [0, 1];
   }
 
   else {
-    
+
     var fibonacciSeq = [0, 1];
     var seqLength = fibonacciSeq.length;
-    
+
     while (seqLength < n) {
 
       var seqLength = fibonacciSeq.length;
@@ -23,7 +30,7 @@ function fibonacciGenerator (n) {
       var secondNum = fibonacciSeq[pos2];
 
       var nextNum = firstNum + secondNum; //1
-    
+
       fibonacciSeq.push(nextNum); //[0, 1, 1]}
       seqLength = fibonacciSeq.length;
 
@@ -33,6 +40,4 @@ function fibonacciGenerator (n) {
 
   }
 
-}
-
-fibonacciGenerator(13);
+};
