@@ -42,6 +42,9 @@ body {
   max-width: 42em;
 }
 
+.slide-up {
+  padding-top: 12rem;
+}
 
 /*
  * Header
@@ -103,4 +106,12 @@ body {
  */
 .mastfoot {
   color: rgba(255, 255, 255, .5);
+}
+
+.modal-title {
+  color: #333;
+}
+
+.modal-body-content {
+  color: #333; 
 }

@@ -59,13 +59,42 @@
       </div>
     </header> -->
 
-    <main role="main" class="inner cover" style="padding-top: 12rem;">
+    <main role="main" class="inner cover" style="padding-top: 10rem;">
       <h1 class="cover-heading">Fibonacci Sequence Generator</h1>
-      <p class="lead">For some reason you may need to know what the Fibonacci sequence is and how it starts. Well, here you go! Press the button to see.</p>
-      <p class="lead">
-        <a href="#" class="btn btn-lg btn-secondary" style="margin-top: 10px;">Generate</a>
-      </p>
+      <p class="lead">For some reason you may be curious to know what the Fibonacci
+         sequence is. Well, here you go! You can now recite it to your friends
+         like the real intellectual that you are.</p><br>
+         <p class="lead" style="font-size: 1rem;">Disclaimer:<br>I did not create the repo to become
+           a genuine tool to use and develop. <br>I just wanted my code to look pretty.</p>
+      <button type="button" class="btn btn-lg btn-light generate-seq" data-toggle="modal" data-target="#exampleModalCenter" style="margin-top: 20px;">
+      Generate</button>
     </main>
+
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable  " role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Sequence</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="modal-body-content">
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary reset-btn" data-dismiss="modal">Reset</button>
+            <button type="button" class="btn btn-primary generate-seq">Generate</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer class="mastfoot mt-auto">
       <div class="inner">
@@ -73,10 +102,15 @@
         <p>Customised by Airra M.</p>
       </div>
     </footer>
+
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="generator.js" charset="utf-8"></script>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 </body>
 

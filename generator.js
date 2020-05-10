@@ -1,8 +1,12 @@
 var i = 0;
 
-$(".btn").on("click", function() {
+$(".generate-seq").on("click", function() {
   i++;
-  console.log(fibonacciGenerator(i));
+  $(".modal-body-content").text(fibonacciGenerator(i));
+});
+
+$(".reset-btn").on("click", function() {
+  i = 0;
 });
 
 function fibonacciGenerator (n) {
